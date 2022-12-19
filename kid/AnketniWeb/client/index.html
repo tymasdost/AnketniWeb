@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./res/css/main.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="center-wrapper">
+            <div id="top-section">
+
+                <img src="./res/imgs/logo.png" alt="Ikonka">
+            </div>
+            <h1>Příhlášení</h1>
+            <div id="login-section">
+                <label for="">Email</label>
+                <input type="email" id="email" class="input" placeholder="Example@spsmb.cz">
+                <div id="emailError" class="error"></div>
+                <label for="">Heslo</label>
+                <input type="password" id="password" class="input" placeholder="Heslo">
+                <div id="pswdError" class="error"></div>
+                <div id="button-section">
+                    <button id="loginBtn">Příhlášení</button>
+                    <div id="checker-wrapper">
+                        <label class="switch" for="checkbox">
+                            <input type="checkbox" id="checkbox"/>
+                            <div class="slider round"></div>
+                          </label>
+                        <span>Zachovat Příhlášení</span>
+                    </div>
+
+                </div>
+            </div>
+            <div id="bottom-section">
+
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="./res/js/login.js"></script>
+</body>
+
+</html>
