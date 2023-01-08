@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domovska stranka</title>
+    <link rel="stylesheet" href="./res/css/home.css">
+    <link rel="stylesheet" href="./res/css/team.css">
+    <script src="https://kit.fontawesome.com/20460edc40.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <div id="left-side-menu">
+            <div id="header" class="rotate">
+                <span id="expanded-button"><i class="fa-solid fa-arrow-left"></i></span>
+            </div>
+            <div id="menu-container">
+                <a href="">
+                    <div class="item"><i class="fa-solid fa-user"></i><span class="menu-text">Ucet</span></div>
+                </a>
+
+                <a href="">
+                    <div class="item"><i class="fa-solid fa-sliders"></i><span class="menu-text">Nastaveni</span></div>
+                </a>
+
+                <a href="./home.html">
+                    <div class="item" id="deletecookie"><i class="fa-solid fa-layer-group"></i><span class="menu-text">Skupiny</span></div>
+                </a>
+
+            </div>
+            <div id="menu-footer">
+                <div id="copy">Made by<br>Team Zidle</div>
+            </div>
+
+        </div>
+        <button id="add-problem">
+            +
+    </button>
+    <div id="problem-creator">
+        <h1>Vytvor problem</h1><br>
+        <h3>Nazev problemu</h3>
+        <h5>(Max 30 pismen)</h5>
+        <input type="text" id="problem-name" maxlength="30"><br>
+        <h3>Popisek problemu</h3>
+        <h5>(Max 200 pismen)</h5>
+        <textarea id="problem" name="text" rows="14" cols="10" wrap="soft" maxlength="200"> </textarea><br>
+        <button id="submit-problem"><b>Potvrdit</b></button>
+    </div>
+        <div id="container">
+
+        </div>
+    </div>
+
+    
+    </script>
+    <script src="./res/js/nav-bar.js"></script>
+    <script src="./res/js/team.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js" type="module"></script>
+    <script type="module" src="../server/node_modules/js-cookie/dist/js.cookie.mjs"></script>
+    <script nomodule defer src="../server/node_modules/js-cookie/dist/js.cookie.js"></script>
+</body>
+
+</html>
